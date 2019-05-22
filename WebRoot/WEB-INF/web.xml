@@ -9,36 +9,36 @@
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>HeadServlet</servlet-name>
-    <servlet-class>com.jiaju.servlet.HeadServlet</servlet-class>
+    <servlet-class>com.MoYin.Servlet.HeadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FootServlet</servlet-name>
+    <servlet-class>com.MoYin.Servlet.FootServlet</servlet-class>
   </servlet>
   <servlet>
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>IndexServlet</servlet-name>
-    <servlet-class>com.jiaju.servlet.IndexServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>ProductTypeListServlet</servlet-name>
-    <servlet-class>com.jiaju.servlet.ProductTypeListServlet</servlet-class>
+    <servlet-class>com.MoYin.Servlet.IndexServlet</servlet-class>
   </servlet>
 
 
 
   <servlet-mapping>
     <servlet-name>HeadServlet</servlet-name>
-    <url-pattern>/head</url-pattern>
+    <url-pattern>/HeadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FootServlet</servlet-name>
+    <url-pattern>/FootServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>IndexServlet</servlet-name>
-    <url-pattern>/index</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ProductTypeListServlet</servlet-name>
-    <url-pattern>/products</url-pattern>
+    <url-pattern>/IndexServlet</url-pattern>
   </servlet-mapping>	
   <welcome-file-list>
-    <welcome-file>index</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
